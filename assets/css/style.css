@@ -1,52 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&display=swap');
+/* 
+    Fontes importadas: 
+        -> Montserrat: 100, 400, 800
+        -> Opens Sans: 300, 400, 800  
+        -> Delicious Handrawn: 400
+*/
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Montserrat:wght@100;400;800&family=Open+Sans:wght@300;400;800&display=swap");
 
-:root{
-    --font-main: 'Montserrat', sans-serif;
-    --color-main: #9198e5;
-    --color-secundary: #e66465;
+:root {
+  --font-One: "Montserrat", sans-serif;
+  --font-Two: "Open Sans", sans-serif;
+  --font-Three: "Delicious Handrawn", cursive;
+  --color-main: #009fbd;
+  --color-secundary: #fff3e2;
+  --color-text: #210062;
+  --color-emphasis: #77037b;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(-90deg, #e66465, #9198e5);
-    font-family: var(--font-main);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(-90deg, #e66465, #9198e5);
+  font-family: var(--font-Two);
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    padding-top: 4vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 2vw;
 }
 
 .container-main {
-    width: 60vw;
-    height: 80vh;
-    background: #fff;
-    border-radius: 18px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  width: 60vw;
+  background: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .container-image {
-    width: 50%;
-    height: 100%;
-    background-image: url(../img/bg.jpg);
-    border-radius: 18px;
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/bg_dog.jpg);
+  background-size: cover;
+  border-radius: 18px 0 0 18px;
 }
 
 .container-form {
-    width: 50%;
-    padding: 5%;
+  width: 50%;
+  padding: 5%;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-main);
+  line-height: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 34px;
+}
+
+/* .text_emphasis {
+  background: var(--color-main);
+  color: #fff;
+} */
+
+header > p {
+  background: var(--color-emphasis);
+  color: #fff;
+  font-family: var(--font-One);
+  width: 28em;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.settings_input {
+  display: flex;
+  flex-direction: column;
+  width: 28em;
+  margin: 1em 0;
+}
+
+.label_default {
+  font-size: 1em;
+  font-family: var(--font-Three);
+  color: var(--color-emphasis);
+  padding: 5px;
+}
+
+.input_default {
+  border-radius: 8px;
+  border: none;
+  background: var(--color-secundary);
+  height: 2.5rem;
+  padding: 5px;
+}
+
+.txt_area {
+  border-radius: 8px;
+  border: none;
+  background: var(--color-secundary);
+  height: 5rem;
+  padding: 5px;
+}
+
+.btn_send {
+  width: 25em;
+  height: 50px;
+  font-family: var(--font-One);
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(45deg, #e66465, #9198e5, #e66465, #9198e5);
+  background-size: 400% 200%;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s cubic-bezier(0.5, 0.1, 0.4, 0.9);
+  animation: brilho 5s ease-in infinite;
+}
+
+@keyframes brilho {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.btn_send:hover {
+    -webkit-box-shadow: 0px 7px 17px 0px rgba(145,152,229,1);
+    -moz-box-shadow: 0px 7px 17px 0px rgba(145,152,229,1);
+    box-shadow: 0px 7px 17px 0px rgba(145,152,229,1);
+    transition: all 0.5s;
 }
