@@ -4,7 +4,7 @@
     https://www.behance.net/gallery/166054821/Daily-UI-082-Form/modules/936462165
 
 
-![modelo de formulário](C:\Projects\form\assets\img\modelo_form.png)
+![modelo de formulário](assets/img/modelo_form.png)
 
 ![Modelo de formulário Mobile](assets/img/modelo_form_mobile.png)
 
