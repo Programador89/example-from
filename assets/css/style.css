@@ -69,11 +69,6 @@ h1 {
   margin-bottom: 34px;
 }
 
-/* .text_emphasis {
-  background: var(--color-main);
-  color: #fff;
-} */
-
 header > p {
   background: var(--color-emphasis);
   color: #fff;
