@@ -143,17 +143,34 @@ header > p {
 
 /* Start code max-width: 576px */
 
-@media (min-width: 320px){
-  body{
-    background: red !important;
+@media (min-width: 320px) {
+  body {
   }
   .container-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    width: 90vw;
   }
 
   .container-image {
+    background: url(../img/bg-mobile.jpg);
+    background-size: cover;
+    width: 90vw;
+    height: 50vh;
+  }
 
+  .container-form {
+    padding: 0;
+    width: 90vw;
+    border: 1px solid red;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    
   }
 }
