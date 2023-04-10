@@ -32,11 +32,11 @@ body {
 main {
   display: flex;
   justify-content: center;
-  padding-top: 2vw;
+  padding-top: 1vw;
 }
 
 .container-main {
-  width: 80vw;
+  width: 70vw;
   background: #fff;
   border-radius: 18px;
   display: flex;
@@ -48,7 +48,7 @@ main {
 }
 
 .container-image {
-  width: 50%;
+  width: 50vw;
   height: 100%;
   background-image: url(../img/bg_dog.jpg);
   background-size: cover;
@@ -67,9 +67,10 @@ h1 {
   line-height: 50px;
   letter-spacing: 2px;
   margin-bottom: 34px;
+  width: 500px;
 }
 
-header > p {
+header>p {
   background: var(--color-emphasis);
   color: #fff;
   font-family: var(--font-One);
@@ -129,6 +130,7 @@ header > p {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 100% 0;
   }
@@ -141,36 +143,186 @@ header > p {
   transition: all 0.5s;
 }
 
-/* Start code max-width: 576px */
 
-@media (min-width: 320px) {
+/* Start code max-width: 767px */
+
+@media (max-width:767px) {
+
   body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-90deg, #e66465, #9198e5);
+    font-family: var(--font-Two);
   }
+
   .container-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20% auto;
     width: 90vw;
   }
 
   .container-image {
     background: url(../img/bg-mobile.jpg);
-    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 90vw;
-    height: 50vh;
+    height: 33vh;
+    border-radius: 18px;
   }
 
   .container-form {
-    padding: 0;
+    padding: 15px;
     width: 90vw;
-    border: 1px solid red;
+    background: #fff;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: calc(1.5rem + 3vw);
+    line-height: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 34px;
+    width: 100%;
+  }
+
+  header>p {
+    background: var(--color-emphasis);
+    color: #fff;
+    font-family: var(--font-One);
+    width: 28em;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .settings_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .input_default {
+    border-radius: 8px;
+    border: none;
+    background: var(--color-secundary);
+    height: 2.5rem;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .btn_send {
+    width: 100%;
+  }
+
+}
+
+/* Iniciando media querie de 1024px */
+@media(max-width:1024px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-90deg, #e66465, #9198e5);
+    background-size: 100%;
+    font-family: var(--font-Two);
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+  }
+
+  .container-main {
+    width: 90vw;
+    background: #fff;
+    border-radius: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    -webkit-box-shadow: 18px 23px 40px -4px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 18px 23px 40px -4px rgba(0, 0, 0, 0.32);
+    box-shadow: 18px 23px 40px -4px rgba(0, 0, 0, 0.32);
+  }
+
+  .container-image {
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/bg_dog.jpg);
+    background-size: cover;
+    border-radius: 18px 0 0 18px;
+  }
+
+  .container-form {
+    width: 50vw;
+    padding: 5%;
   }
 
   h1 {
     font-size: 2.5em;
-    line-height: 45px;
+    font-weight: 800;
+    color: var(--color-main);
+    line-height: 50px;
     letter-spacing: 2px;
     margin-bottom: 34px;
-    
+    width: 100%;
+  }
+
+  header>p {
+    background: var(--color-emphasis);
+    color: #fff;
+    font-family: var(--font-One);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .settings_input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .label_default {
+    font-size: 1em;
+    font-family: var(--font-Three);
+    color: var(--color-emphasis);
+    padding: 5px;
+  }
+
+  .input_default {
+    border-radius: 8px;
+    border: none;
+    background: var(--color-secundary);
+    height: 2.5rem;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .txt_area {
+    border-radius: 8px;
+    border: none;
+    background: var(--color-secundary);
+    height: 5rem;
+    padding: 5px;
+  }
+
+  .btn_send {
+    width: 100%;
+    height: 50px;
+    font-family: var(--font-One);
+    font-weight: 800;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(45deg, #e66465, #9198e5, #e66465, #9198e5);
+    background-size: 400% 200%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.5s cubic-bezier(0.5, 0.1, 0.4, 0.9);
+    animation: brilho 5s ease-in infinite;
   }
 }
