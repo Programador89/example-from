@@ -3,11 +3,11 @@
 ## link de referência para página de cadastro: 
     https://www.behance.net/gallery/166054821/Daily-UI-082-Form/modules/936462165
 
-*Modelo de formulário para desktop - imagem ilustrativa que será alterada ao termino do projeto*
-![modelo de formulário](assets/img/modelo_form.png)
+*Versão de formulário para desktop*
+![modelo de formulário](assets/img/versao_Desktop_Form.png)
 
-*Modelo de formulário para mobile - imagem ilustrativa que será alterada ao termino do projeto*
-![Modelo de formulário Mobile](assets/img/modelo_form_mobile.png)
+*Versão de formulário para mobile*
+![Modelo de formulário Mobile](assets/img/versao_Mobile_Form.png)
 
 
 ## Tarefas

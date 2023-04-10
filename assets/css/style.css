@@ -159,8 +159,9 @@ header>p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: 20% auto;
-    width: 90vw;
+    width: 80%;
   }
 
   .container-image {
@@ -168,8 +169,10 @@ header>p {
     background-size: 100%;
     background-repeat: no-repeat;
     width: 90vw;
-    height: 33vh;
+    height: 60vw;
     border-radius: 18px;
+    margin-bottom: -20px;
+    
   }
 
   .container-form {
@@ -177,6 +180,7 @@ header>p {
     width: 90vw;
     background: #fff;
     border-radius: 18px;
+    
   }
 
   h1 {
@@ -220,7 +224,7 @@ header>p {
 }
 
 /* Iniciando media querie de 1024px */
-@media(max-width:1024px) {
+@media(min-width:1024px) {
   body {
     width: 100vw;
     height: 100vh;
